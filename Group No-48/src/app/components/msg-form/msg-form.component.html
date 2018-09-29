@@ -1,0 +1,12 @@
+<div class="container">
+  <!-- <div class="row chat-window col-xs-5 col-md-3" style = "margin-right: 10px;"> -->
+  <!-- <input type="text" class="form-control chatinput" [(ngModel)]="message.content"/> -->
+  <mat-form-field class = "form-control chatinput">
+    <input class="inputfield" matInput placeholder="Enter Text" [(ngModel)]="message.content"/>
+  </mat-form-field>
+  <span class="inputbutton">
+      <button class = "sendbtn button" mat-raised-button color="primary" (click)="sendMessage()">Send</button>
+  </span>
+  
+  <!-- </div> -->
+</div>

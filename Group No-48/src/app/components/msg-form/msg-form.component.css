@@ -1,0 +1,24 @@
+container{
+    float: left;
+    width: 100%;
+}
+    .chatinput{
+      width: 80%;
+      float: left;
+      border-radius: 0;
+    }
+  .inputfield{
+    margin: 2px;
+    padding: 7px 0px;
+    border: 2px solid;
+    border-color: darkviolet;
+    border-radius: 4px;
+    }
+  .sendbtn{
+    bottom: -28px;
+    left: -10px;
+    /* float: right; */
+  }
+  .button:hover{
+    background-color: indigo;
+  }

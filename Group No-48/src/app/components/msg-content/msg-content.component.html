@@ -1,0 +1,12 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<li class="list-group-item">
+  <img [src]="message.avatar" class="avatar"/>
+    {{message.content}}
+<div class="message">
+  <div class="timeform">
+    <i class="material-icons" aria-hidden="true">schedule</i>
+    <span class="timestamp">at {{message.timestamp}}</span>
+  </div>
+</div>
+</li>
