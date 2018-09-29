@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bosh Connection</title>
+</head>
+<body>
+	<div id='login' style='text-align: center'>
+	<form name='credentials'>
+	<label for='jid'>JID:</label>
+	<input type='text' id='jid'>
+	<label for='pass'>Password:</label>
+	<input type='password' id='pass'>
+	<input type='button' id='connect' value='connect'>
+	<input type='button' id='connect2' onclick="test()">
+	</form>
+	</div>
+	<hr>
+	<div id='log'></div>
+<!-- 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script> -->
+	<script src='./node_modules/node-strophe/strophe.js'></script>
+<!-- 	<script src='https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/vkbeautify/vkbeautify.0.99.00.beta.js'></script> -->
+<!-- <script src='./Boshconnection.js'></script> -->
+	<script src='./server.js'></script>
+	<script src='./app.js'></script>
+<!-- <script src="../WebContent/require.js" data-main="Boshconnection.js"></script> -->
+	
+	<!-- <script>
+	
+
+		function test(){
+			var host = 'localhost';
+			var port = 5280;
+// 			var app = express();
+			//var stropheJs = Strophe.Connection(this.app);
+			var jid = 'admin/localhost:5280';
+			var password = 'password';
+			var BOSH_SERVICE = 'http://localhost:5280/bosh';
+			var connection = new Strophe.Connection('BOSH_SERVICE');
+			var status;
+			
+
+			console.log('>> '+connection);
+			if (status === Strophe.Status.CONNECTING){
+				console.log('Strophe is connecting.');
+			} else if (status === Strophe.Status.CONNFAIL){
+				console.log('Stropo connect.');
+			} else if (status === Strophe.Status.DISCONNECTING){
+				console.log('Stropnnection.');	
+			} else if (status === Strophe.Status.DISCONNECTED){
+				console.log('Strophe is disconnected.');
+			} else if (status === Strophe.Status.CONNECTED){
+				console.log('Strophe is connected.');
+				connection.disconnect();
+			}
+		}
+	</script> -->
+</body>
+</html>
