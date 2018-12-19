@@ -12,6 +12,8 @@
   "author": "Ajinkya Sonawane",
   "license": "ISC",
   "dependencies": {
+    "keyword-extractor": "0.0.15",
+    "newsapi": "^2.4.0",
     "twit": "^2.2.11"
   }
 }
